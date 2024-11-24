@@ -14,4 +14,4 @@ Variety of Vencord Plugins meant to add chatbar buttons to help you make animal 
 
 
 ## Contribute
-Fork and open a pr to add a plugin for making anime noises
+Fork and open a pr to add a plugin for making animal noises
