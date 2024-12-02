@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { addChatBarButton, ChatBarButton } from "@api/ChatButtons";
+import { addChatBarButton, ChatBarButton, removeChatBarButton } from "@api/ChatButtons";
 import { Devs } from "@utils/constants";
 import { getCurrentChannel, sendMessage } from "@utils/discord";
 import definePlugin from "@utils/types";
@@ -32,7 +32,6 @@ export default definePlugin({
         // Import from EquicordDev for Equicord
         { name: "krystalskullofficial", id: 929208515883569182n }
     ],
-    start() {
-        addChatBarButton("vc-Honk", ChatBarIcon);
-    }
+    start: () => addChatBarButton("Honk", ChatBarIcon),
+    stop: () => removeChatBarButton("Honk")
 });
